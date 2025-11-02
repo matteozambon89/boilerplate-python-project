@@ -6,6 +6,8 @@
   "runArgs": ["--name=python-project_devcontainer"],
   "remoteUser": "worker",
   "mounts": [
+    "source=${localEnv:HOME}/.ssh,target=/home/worker/.ssh,type=bind,consistency=cached",
+    "source=${localEnv:HOME}/.gitconfig,target=/home/worker/.gitconfig,type=bind,consistency=cached",
     "source=${localEnv:HOME}/.config/starship.toml,target=/home/worker/.config/starship.toml,type=bind,consistency=cached",
     "target=/workspace/project/.venv,type=volume"
   ],

@@ -2,7 +2,7 @@ FROM python:3-alpine
 
 # Install basic development tools
 RUN apk update
-RUN apk add --no-cache sudo bash zsh git curl starship just uv
+RUN apk add --no-cache sudo bash zsh git curl openssh-client starship just uv
 
 # Update pip
 RUN pip install --upgrade pip
