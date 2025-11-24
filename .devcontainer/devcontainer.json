@@ -32,6 +32,7 @@
         "editor.formatOnSave": true,
         "python.analysis.autoFormatStrings": true,
         "python.analysis.autoImportCompletions": true,
+        "python.analysis.autoSearchPaths": true,
         "python.analysis.extraPaths": [".venv/lib/*/site-packages", ".venv/lib64/*/site-packages"],
         "python.analysis.generateWithTypeAnnotation": true,
         "python.analysis.inlayHints.pytestParameters": true,
@@ -45,21 +46,21 @@
         "python.testing.pytestEnabled": true
       },
       "extensions": [
-        "skellock.just",
-        "esbenp.prettier-vscode",
+        "aaron-bond.better-comments",
+        "astral-sh.ty",
         "charliermarsh.ruff",
+        "continue.continue",
+        "esbenp.prettier-vscode",
+        "minherz.copyright-inserter",
+        "redhat.vscode-yaml",
         "rodolphebarbanneau.python-docstring-highlighter",
+        "skellock.just",
         "streetsidesoftware.code-spell-checker",
         "tamasfe.even-better-toml",
-        "redhat.vscode-yaml",
-        "minherz.copyright-inserter",
-        "aaron-bond.better-comments",
-        "continue.continue",
         "the0807.uv-toolkit"
       ]
     }
   },
-
   "workspaceMount": "src=${localWorkspaceFolder},target=/workspace/project,type=bind",
   "workspaceFolder": "/workspace/project"
 }
