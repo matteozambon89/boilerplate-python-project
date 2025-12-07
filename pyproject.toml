@@ -4,13 +4,21 @@ version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.14"
+license-files = ["LICENSE"]
+classifiers = [
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.14",
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+]
 dependencies = []
 
 [dependency-groups]
-boilerplace-api = [
+boilerplate-api = [
     "fastapi[standard]>=0.120.4",
 ]
-boilerplace-cli = [
+boilerplate-cli = [
     "click>=8.3.0",
 ]
 dev = [
@@ -30,8 +38,9 @@ requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools.packages.find]
-where = ["src/"]
-include = ["yeeti"]
+where = ["src"]
+include = ["yeeti*"]
+exclude = ["yeeti.examples*"]
 
 [project.urls]
 Homepage = "https://github.com/matteozambon89/boilerplate-python-project"

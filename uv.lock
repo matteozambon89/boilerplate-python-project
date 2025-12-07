@@ -353,10 +353,10 @@ version = "0.1.0"
 source = { editable = "." }
 
 [package.dev-dependencies]
-boilerplace-api = [
+boilerplate-api = [
     { name = "fastapi", extra = ["standard"] },
 ]
-boilerplace-cli = [
+boilerplate-cli = [
     { name = "click" },
 ]
 dev = [
@@ -374,8 +374,8 @@ test = [
 [package.metadata]
 
 [package.metadata.requires-dev]
-boilerplace-api = [{ name = "fastapi", extras = ["standard"], specifier = ">=0.120.4" }]
-boilerplace-cli = [{ name = "click", specifier = ">=8.3.0" }]
+boilerplate-api = [{ name = "fastapi", extras = ["standard"], specifier = ">=0.120.4" }]
+boilerplate-cli = [{ name = "click", specifier = ">=8.3.0" }]
 dev = [{ name = "debugpy", specifier = ">=1.8.17" }]
 lint = [
     { name = "ruff", specifier = ">=0.14.3" },
